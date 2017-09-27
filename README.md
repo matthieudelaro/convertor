@@ -1,9 +1,12 @@
+[![Build Status](https://travis-ci.org/matthieudelaro/convertor.svg?branch=master)](https://travis-ci.org/matthieudelaro/convertor)
+
+
 # Convertor
 This is a simple command line tool to convert currencies.
-Take a look a the pdf for further details.
+Take a look at the pdf for further details.
 
 Run the program a follow:
-```
+```bash
     # python3 main.py some/file/path
 
     python3 main.py examples/validExample.txt
@@ -14,6 +17,6 @@ Run the program a follow:
 ```
 
 Run tests as follow:
-```
+```bash
     python3 Convertor.py
 ```
