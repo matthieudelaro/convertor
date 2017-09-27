@@ -9,7 +9,7 @@ from Convertor import Convertor
 def convert():
     if len(sys.argv) != 2:
         print("Please provide as unique argument the path of the" +
-              "file which is to be parsed.")
+              " file which is to be parsed.")
     else:
         c = Convertor()
         res = c.parseFile(sys.argv[1])

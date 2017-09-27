@@ -52,7 +52,7 @@ class Convertor:
                     self._graph[TDD] = self._graph.get(TDD, []) + [TDS]
                     self._rules.append(Edge(TDS, TC, TDD))
                     self._rules.append(Edge(TDD, Decimal(1.0)/TC, TDS))
-        except Exception as e:
+        except Exception:
             return "invalid_format"
         finally:
             csvFile.close()
@@ -73,7 +73,7 @@ class Convertor:
             return self._MS
         else:
             res = Decimal(self._MS)
-            for source,destination in zip(self._path[0::1], self._path[1::1]):
+            for source, destination in zip(self._path[0::1], self._path[1::1]):
                 coef = ([edge.value
                         for edge in self._rules
                         if edge.source == source and edge.destination == destination])[0]
